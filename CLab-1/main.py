@@ -22,4 +22,4 @@ D123 = np.diag([1.0, 2.0, 3.0])
 x = constrained_LLS(D123, I3)
 
 assert np.abs(np.linalg.norm(x, ord=2) -
-              1) <= eps and np.linalg.norm(D123@x, ord=2) <= 1 + 
+              1) <= eps and np.linalg.norm(D123@x, ord=2) <= 1 + eps
